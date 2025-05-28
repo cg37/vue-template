@@ -1,3 +1,13 @@
 {
-  "recommendations": ["Vue.volar"]
+  "recommendations": [
+    "oderwat.indent-rainbow",
+    "formulahendry.auto-rename-tag",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-next",
+    "mgmcdermott.vscode-language-babel",
+    "ecmel.vscode-html-css",
+    "gxl.git-graph-3",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig"
+  ]
 }
