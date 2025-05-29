@@ -8,6 +8,7 @@
     "ecmel.vscode-html-css",
     "gxl.git-graph-3",
     "esbenp.prettier-vscode",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "christian-kohler.path-intellisense"
   ]
 }
