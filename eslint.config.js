@@ -26,7 +26,10 @@ export default defineConfig([
         "error",
         {
           endOfLine: "auto",
-          trailingComma: "none"
+          trailingComma: "none",
+          bracketSpacing: true, // 不在括号内加空格
+          arrayBracketNewlines: true, // 禁止数组括号换行
+          objectCurlyNewlines: "never" // 强制对象括号不换行
         }
       ],
       "vue/html-self-closing": [
