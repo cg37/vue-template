@@ -4,5 +4,5 @@ export default {
   tabWidth: 2,
   trailingComma: "none",
   useTabs: false,
-  endOfLine: "lf"
+  endOfLine: "auto"
 };

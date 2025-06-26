@@ -21,15 +21,7 @@ export default defineConfig([
         parser: tseslint.parser
       }
     },
-    rules: {
-      "prettier/prettier": [
-        "error",
-        {
-          endOfLine: "auto",
-          trailingComma: "none"
-        }
-      ]
-    }
+    rules: {}
   },
   {
     files: ["**/*.vue"],
