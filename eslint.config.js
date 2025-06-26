@@ -21,7 +21,20 @@ export default defineConfig([
         parser: tseslint.parser
       }
     },
-    rules: {}
+    rules: {
+      "vue/html-self-closing": [
+        "error",
+        {
+          html: {
+            void: "always", // 强制 void 元素（如 <img>, <input>）自闭合
+            normal: "never", // 强制非 void 元素（如 <div>, <span>）不自闭合
+            component: "always" // 强制 Vue 组件自闭合（如 <MyComponent />）
+          },
+          svg: "always", // 强制 SVG 标签自闭合
+          math: "always" // 强制 MathML 标签自闭合
+        }
+      ]
+    }
   },
   {
     files: ["**/*.vue"],
