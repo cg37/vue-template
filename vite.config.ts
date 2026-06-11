@@ -8,27 +8,27 @@ import compression from "vite-plugin-compression";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    svgLoader(),
-    AutoImport({
-      imports: ["vue", "vue-router"],
-      dts: "src/auto-imports.d.ts"
-    }),
-    Components({
-      dts: "src/components.d.ts"
-    }),
-    compression({
-      algorithm: "gzip"
-    })
-  ],
-  server: {
-    host: "0.0.0.0",
-    port: 3031
-  },
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src")
+    plugins: [
+        vue(),
+        svgLoader(),
+        AutoImport({
+            imports: ["vue", "vue-router"],
+            dts: "src/auto-imports.d.ts"
+        }),
+        Components({
+            dts: "src/components.d.ts"
+        }),
+        compression({
+            algorithm: "gzip"
+        })
+    ],
+    server: {
+        host: "0.0.0.0",
+        port: 3031
+    },
+    resolve: {
+        alias: {
+            "@": path.resolve(__dirname, "src")
+        }
     }
-  }
 });

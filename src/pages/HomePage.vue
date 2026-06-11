@@ -1,8 +1,8 @@
 <template>
-  <div class="home-page">
-    <h1>首页</h1>
-    <p>欢迎使用 Vue 3 模板项目</p>
-  </div>
+    <div class="home-page">
+        <h1>首页</h1>
+        <p>欢迎使用 Vue 3 模板项目</p>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -11,11 +11,11 @@
 
 <style scoped>
 .home-page {
-  padding: 2rem;
-  text-align: center;
+    padding: 2rem;
+    text-align: center;
 }
 
 h1 {
-  color: #646cff;
+    color: #646cff;
 }
 </style>

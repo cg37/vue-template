@@ -1,8 +1,8 @@
 <template>
-  <div class="about-page">
-    <h1>关于</h1>
-    <p>这是一个基于 Vue 3 + TypeScript + Vite 的模板项目</p>
-  </div>
+    <div class="about-page">
+        <h1>关于</h1>
+        <p>这是一个基于 Vue 3 + TypeScript + Vite 的模板项目</p>
+    </div>
 </template>
 
 <script setup lang="ts">
@@ -11,11 +11,11 @@
 
 <style scoped>
 .about-page {
-  padding: 2rem;
-  text-align: center;
+    padding: 2rem;
+    text-align: center;
 }
 
 h1 {
-  color: #646cff;
+    color: #646cff;
 }
 </style>
