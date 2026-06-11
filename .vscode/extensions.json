@@ -1,14 +1,12 @@
 {
     "recommendations": [
+        "Vue.volar",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "editorconfig.editorconfig",
         "oderwat.indent-rainbow",
         "formulahendry.auto-rename-tag",
-        "dbaeumer.vscode-eslint",
-        "ms-vscode.vscode-typescript-next",
-        "mgmcdermott.vscode-language-babel",
-        "ecmel.vscode-html-css",
-        "gxl.git-graph-3",
-        "esbenp.prettier-vscode",
-        "editorconfig.editorconfig",
-        "christian-kohler.path-intellisense"
+        "christian-kohler.path-intellisense",
+        "gxl.git-graph-3"
     ]
 }

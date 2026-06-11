@@ -9,6 +9,8 @@
         "preview": "vite preview",
         "lint": "eslint",
         "lint:fix": "eslint --fix",
+        "format": "prettier --write \"src/**/*.{js,ts,vue,css,scss,html,json}\"",
+        "format:check": "prettier --check \"src/**/*.{js,ts,vue,css,scss,html,json}\"",
         "prepare": "husky",
         "type-check": "vue-tsc --noEmit"
     },

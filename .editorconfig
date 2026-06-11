@@ -1,0 +1,25 @@
+# EditorConfig - 跨编辑器/IDE 统一代码风格
+# https://editorconfig.org
+
+root = true
+
+# 全局默认规则
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Markdown 文件不裁剪尾部空格（连续空行有语义）
+[*.md]
+trim_trailing_whitespace = false
+
+# JSON/YAML 文件使用 2 空格缩进
+[*.{json,yml,yaml}]
+indent_size = 2
+
+# package.json 使用 2 空格缩进
+[package.json]
+indent_size = 2
