@@ -22,6 +22,7 @@ dist-ssr
 
 # Editor directories and files
 .vscode/*
+!.vscode/extensions.json
 !.vscode/settings.json
 .idea
 .DS_Store
@@ -30,6 +31,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Build output
+build/
+
+# Auto-generated (取消注释以忽略)
+# src/auto-imports.d.ts
+# src/components.d.ts
 
 # Husky internal
 .husky/_

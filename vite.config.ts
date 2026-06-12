@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import path from "path";
+import { fileURLToPath, URL } from "node:url";
 import svgLoader from "vite-svg-loader";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
@@ -19,7 +19,8 @@ export default defineConfig({
             dts: "src/components.d.ts"
         }),
         compression({
-            algorithm: "gzip"
+            algorithm: "gzip",
+            threshold: 10240 // 仅压缩 >10KB 的文件
         })
     ],
     server: {
@@ -28,7 +29,20 @@ export default defineConfig({
     },
     resolve: {
         alias: {
-            "@": path.resolve(__dirname, "src")
+            "@": fileURLToPath(new URL("./src", import.meta.url))
         }
+    },
+    build: {
+        target: "es2022",
+        cssCodeSplit: true,
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    "vue-vendor": ["vue", "vue-router"]
+                }
+            }
+        },
+        // 生产环境移除 console 和 debugger
+        minify: "esbuild"
     }
 });
