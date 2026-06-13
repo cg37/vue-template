@@ -5,6 +5,7 @@ import svgLoader from "vite-svg-loader";
 import AutoImport from "unplugin-auto-import/vite";
 import Components from "unplugin-vue-components/vite";
 import compression from "vite-plugin-compression";
+import prettierDts from "vite-plugin-prettier-dts";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -21,7 +22,8 @@ export default defineConfig({
         compression({
             algorithm: "gzip",
             threshold: 10240 // 仅压缩 >10KB 的文件
-        })
+        }),
+        prettierDts()
     ],
     server: {
         host: "0.0.0.0",
@@ -42,7 +44,6 @@ export default defineConfig({
                 }
             }
         },
-        // 生产环境移除 console 和 debugger
         minify: "esbuild"
     }
 });
